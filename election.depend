@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665690785 source:/home/adame/code/Older/C/election/main.c
+	<stdio.h>
+	<stdlib.h>
+
