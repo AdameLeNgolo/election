@@ -3,7 +3,8 @@
 
 int main()
 {
-    int typeElection,nbCandidats;
+    int typeElection,nbCandidats,i=1;
+    int *candidats;
 
     do{
         printf("Welcome to this app!\n");
@@ -19,10 +20,21 @@ int main()
             do{
                 printf("Pour commencer merci de selectionner le nombre de candidats:");
                 scanf("%d",&nbCandidats);
-
             }while(nbCandidats <= 0);
 
-            printf("%d Candidats ont ete approuves",&nbCandidats);
+             do{
+                printf("Saisir le nom du candidat %d: ",i);
+                scanf("%d",candidats[i]);
+                i++;
+
+                //fflush(stdin);
+
+            }while( i <= nbCandidats);
+
+           /* printf("%d Candidats ont ete approuves",nbCandidats);
+            for(i = 0; i < nbCandidats ; i++){
+                printf("%d \t",candidats[i]);
+            }*/
 
             break;
         case 2:
